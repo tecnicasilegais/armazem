@@ -3,26 +3,31 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ControleDeVeiculos {
-    List<Veiculo> listaVeiculos;
-
-    public Veiculo getVeiculo(String placa) throws NoSuchElementException{
-        if (listaVeiculos == null) {
-            listaVeiculos = PersistenciaVeiculos.carregaVeiculos();
-        }
-        for (Veiculo veiculo : listaVeiculos) {
+    /**
+     * Procura um veículo com base na placa passada
+     * 
+     * @param placa Placa do veículo
+     * @return Veículo com a placa correspondente, se existir
+     * @throws NoSuchElementException
+     */
+    public static Veiculo getVeiculo(String placa) throws NoSuchElementException {
+        for (Veiculo veiculo : PersistenciaVeiculos.carregaVeiculos()) {
             if (veiculo.getPlaca() == placa) {
                 return veiculo;
             }
         }
-        throw new NoSuchElementException("Nenhum veículo com a placa " + placa + " foi encontrado.")
+        throw new NoSuchElementException("Nenhum veículo com a placa " + placa + " foi encontrado.");
     }
 
-    public List<Veiculo> getVeiculo(CategoriaVeiculo categoria) {
-        if (listaVeiculos == null) {
-            listaVeiculos = PersistenciaVeiculos.carregaVeiculos();
-        }
+    /**
+     * Procura os veículos da categoria passada
+     * 
+     * @param categoria Categoria do veículo
+     * @return Lista contendo os veículos ou lista vazia
+     */
+    public static List<Veiculo> getVeiculo(CategoriaVeiculo categoria) {
         LinkedList<Veiculo> retornoVeiculos = new LinkedList<Veiculo>();
-        for (Veiculo veiculo : listaVeiculos) {
+        for (Veiculo veiculo : PersistenciaVeiculos.carregaVeiculos()) {
             if (veiculo.getCategoria() == categoria) {
                 retornoVeiculos.add(veiculo);
             }
@@ -30,10 +35,12 @@ public class ControleDeVeiculos {
         return retornoVeiculos;
     }
 
-    public List<Veiculo> getTodosVeiculos() {
-        if (listaVeiculos == null) {
-            listaVeiculos = PersistenciaVeiculos.carregaVeiculos();
-        }
-        return listaVeiculos;
+    /**
+     * Lista todos os veículos
+     * 
+     * @return Lista contendo todos os veículos
+     */
+    public static List<Veiculo> getTodosVeiculos() {
+        return PersistenciaVeiculos.carregaVeiculos();
     }
 }

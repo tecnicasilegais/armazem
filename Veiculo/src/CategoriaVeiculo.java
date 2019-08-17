@@ -1,3 +1,3 @@
 public enum CategoriaVeiculo {
-    SIMPLES, NORMAL, LUXO;
+    Simples, Normal, Luxo
 }
