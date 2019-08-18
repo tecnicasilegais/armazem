@@ -1,3 +1,5 @@
+import Enums.CategoriaVeiculo;
+
 public class Veiculo {
     private String cor;
     private String marca;

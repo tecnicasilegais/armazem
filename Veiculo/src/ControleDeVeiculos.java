@@ -2,12 +2,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import Enums.CategoriaVeiculo;
+
 public class ControleDeVeiculos {
     /**
-     * Procura um veículo com base na placa passada
+     * Procura um veiculo com base na placa passada
      * 
-     * @param placa Placa do veículo
-     * @return Veículo com a placa correspondente, se existir
+     * @param placa Placa do veiculo
+     * @return Veiculo com a placa correspondente, se existir
      * @throws NoSuchElementException
      */
     public static Veiculo getVeiculo(String placa) throws NoSuchElementException {
@@ -16,14 +18,14 @@ public class ControleDeVeiculos {
                 return veiculo;
             }
         }
-        throw new NoSuchElementException("Nenhum veículo com a placa " + placa + " foi encontrado.");
+        throw new NoSuchElementException("Nenhum veiculo com a placa " + placa + " foi encontrado.");
     }
 
     /**
-     * Procura os veículos da categoria passada
+     * Procura os veiculos da categoria passada
      * 
-     * @param categoria Categoria do veículo
-     * @return Lista contendo os veículos ou lista vazia
+     * @param categoria Categoria do veiculo
+     * @return Lista contendo os veiculos ou lista vazia
      */
     public static List<Veiculo> getVeiculo(CategoriaVeiculo categoria) {
         LinkedList<Veiculo> retornoVeiculos = new LinkedList<Veiculo>();
@@ -36,9 +38,9 @@ public class ControleDeVeiculos {
     }
 
     /**
-     * Lista todos os veículos
+     * Lista todos os veiculos
      * 
-     * @return Lista contendo todos os veículos
+     * @return Lista contendo todos os veiculos
      */
     public static List<Veiculo> getTodosVeiculos() {
         return PersistenciaVeiculos.carregaVeiculos();
