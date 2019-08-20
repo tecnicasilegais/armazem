@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
+import Veiculo.*;
 
 import Enums.CategoriaVeiculo;
 

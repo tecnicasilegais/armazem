@@ -1,3 +1,5 @@
+package Veiculo;
+
 import Enums.CategoriaVeiculo;
 
 public class Veiculo {
