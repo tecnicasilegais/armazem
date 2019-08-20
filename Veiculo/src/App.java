@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import veiculo.*;
 
-import enuns.CategoriaVeiculo;
+import enums.CategoriaVeiculo;
 
 public class App {
 	private static Scanner sc;
