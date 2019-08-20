@@ -1,10 +1,10 @@
-package Veiculo;
+package veiculo;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import Enums.CategoriaVeiculo;
+import enums.CategoriaVeiculo;
 
 public class ControleDeVeiculos {
     /**
