@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import Veiculo.*;
+import veiculo.*;
 
-import Enums.CategoriaVeiculo;
+import enuns.CategoriaVeiculo;
 
 public class App {
 	private static Scanner sc;
