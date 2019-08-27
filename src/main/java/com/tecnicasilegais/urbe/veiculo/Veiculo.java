@@ -1,6 +1,6 @@
-package veiculo;
+package com.tecnicasilegais.urbe.veiculo;
 
-import enums.CategoriaVeiculo;
+import com.tecnicasilegais.urbe.enums.CategoriaVeiculo;
 
 public class Veiculo {
     private String cor;

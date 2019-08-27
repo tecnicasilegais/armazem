@@ -1,12 +1,14 @@
+package com.tecnicasilegais.urbe;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
-import veiculo.*;
-
-import enums.CategoriaVeiculo;
+import com.tecnicasilegais.urbe.enums.CategoriaVeiculo;
+import com.tecnicasilegais.urbe.veiculo.ControleDeVeiculos;
+import com.tecnicasilegais.urbe.veiculo.Veiculo;
 
 public class App {
 	private static Scanner sc;

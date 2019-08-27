@@ -1,4 +1,4 @@
-package motorista;
+package com.tecnicasilegais.urbe.motorista;
 
 import java.util.LinkedList;
 import java.util.List;

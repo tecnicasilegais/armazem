@@ -1,7 +1,7 @@
-package motorista;
+package com.tecnicasilegais.urbe.motorista;
 
-import enums.FormaPgto;
-import veiculo.Veiculo;
+import com.tecnicasilegais.urbe.enums.FormaPgto;
+import com.tecnicasilegais.urbe.veiculo.Veiculo;
 
 public class Motorista {
     private String cpf;
