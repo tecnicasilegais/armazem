@@ -35,11 +35,16 @@ public class Passageiro {
         return this.nroCartao;
     }
 
-    public int getQtdAvaliacoes() {
-        return this.qtdAvaliacoes;
+    public int getPontuacaoMedia(){
+        return this.calculaPontuacaoMedia();
     }
 
-    public long getEstrelas() {
-        return this.estrelas;
+    public void infoPontuacao(int pontuacao){
+        this.qtdAvaliacoes ++;
+        this.estrelas += pontuacao;
+    }
+
+    private int calculaPontuacaoMedia(){
+        return (int)this.estrelas/this.qtdAvaliacoes;
     }
 }
