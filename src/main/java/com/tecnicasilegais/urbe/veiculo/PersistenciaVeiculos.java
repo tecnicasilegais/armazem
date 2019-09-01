@@ -1,15 +1,18 @@
 package com.tecnicasilegais.urbe.veiculo;
 
+//listas
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+//Leituras
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
 import com.tecnicasilegais.urbe.enums.CategoriaVeiculo;
 
 /**
