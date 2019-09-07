@@ -1,0 +1,10 @@
+/usr/src/src/main/java/com/tecnicasilegais/urbe/enums/CategoriaVeiculo.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/enums/FormaPgto.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/veiculo/Veiculo.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/motorista/PersistenciaMotoristas.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/veiculo/ControleDeVeiculos.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/App.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/passageiro/PersistenciaPassageiros.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/passageiro/Passageiro.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/motorista/Motorista.java
+/usr/src/src/main/java/com/tecnicasilegais/urbe/veiculo/PersistenciaVeiculos.java

@@ -39,6 +39,14 @@ public class Passageiro {
         return this.calculaPontuacaoMedia();
     }
 
+    public int getQtdAvaliacoes(){
+        return this.qtdAvaliacoes;
+    }
+
+    public long getEstrelas(){
+        return this.estrelas;
+    }
+
     public void infoPontuacao(int pontuacao){
         this.qtdAvaliacoes ++;
         this.estrelas += pontuacao;
